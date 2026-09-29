@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Mainsah et al. 2025 — bigP3BCI: An Open, Diverse and Machine Learning Ready P300-based Brain-Computer Interface Dataset (Study O)",
-  "description": "BigP3BCI Study O is a P300-based brain-computer interface dataset comprising EEG recordings from 18 subjects with Amyotrophic Lateral Sclerosis (ALS) across 2 sessions each. The dataset employs a 9x8 character grid with supervised and checkerboard stimulus paradigms, recorded at 256 Hz using 32-channel standard 1020 montage. This derivative dataset is part of the larger BigP3BCI collection, the largest public P300 BCI dataset containing recordings from approximately 267 subjects across 20 studies, designed to support machine learning research and BCI application development.",
-  "methods_description": "EEG data were acquired using g.USBamp hardware (g.tec) at a sampling rate of 256 Hz from 32 channels arranged in a standard 1020 montage. The experimental paradigm employed a 9x8 character grid with visual presentation of target and non-target stimuli. Data were collected across 2 sessions per subject using a calibration-then-test cross-validation approach with within-subject evaluation. Line frequency was 60 Hz.",
+  "description": "This dataset is Study O of bigP3BCI, an open P300-based brain-computer interface collection, and contains EEG recordings from 18 participants with ALS. Participants used a 9x8 character grid speller with a supervised checkerboard stimulus paradigm across two sessions per subject. Target and non-target flashes are annotated with HED tags, and the data are formatted for machine learning and benchmarking with MOABB.",
+  "methods_description": "EEG was recorded with a g.USBamp amplifier (g.tec) from 32 channels at 256 Hz using a standard 10-20 montage, in a laboratory with a 60 Hz line frequency. Participants used a P300 speller with online feedback, and calibration was followed by testing. Events are Target and NonTarget, epoched over a 0-1.0 s interval.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -22,37 +22,22 @@
   },
   "keywords": [
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
       "term": "EEG"
     },
     {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+      "term": "P300"
     },
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "brain-computer interface"
     },
     {
-      "term": "Amyotrophic Lateral Sclerosis",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000690"
+      "term": "speller"
     },
     {
-      "term": "visual perception"
+      "term": "amyotrophic lateral sclerosis"
     },
     {
-      "term": "speller paradigm"
-    },
-    {
-      "term": "machine learning"
+      "term": "event-related potentials"
     }
   ],
   "related_identifiers": [
@@ -88,7 +73,7 @@
     "eeg"
   ],
   "sizes": [
-    "3.5 GB (695 files)"
+    "3.22 GB (695 files)"
   ],
   "formats": [
     ".bdf",
